@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TecKit">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../hello-world/Tec/6to semestre/LibreriasPropias/TecKit/dist/TecKit.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
