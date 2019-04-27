@@ -1,5 +1,7 @@
 package mx.edu.itch.sistemas.seblab.graphics;
 
+import java.awt.*;
+
 public class Laser {
 
     private final int THICKNESS = 2;
@@ -39,17 +41,18 @@ public class Laser {
         return finalY;
     }
 
-    public void increaseX(){
+    public void increaseXY(){
         this.finalX+=this.directionX;
-    }
-
-    public void increaseY(){
         this.finalY+=this.directionY;
     }
 
 
     public void stop(){
         stop=true;
+    }
+
+    public void show(Graphics g){
+        g.drawLine(initialX,initialY,finalX,finalY);
     }
 
     public int getDirectionX() {

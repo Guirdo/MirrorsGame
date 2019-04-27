@@ -4,65 +4,74 @@ import mx.edu.itch.sistemas.seblab.InterfazGrafica.PaletaColores;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
-public class Canvas extends JComponent {
+public class Canvas extends JComponent implements MouseListener {
 
     private JPanel panel;
     private ArrayList<Laser> laserArrayList;
     private ArrayList<Mirror> mirrors;
+    private ArrayList<Cell> cells;
+    private int rows =4;
+    private int cols = 4;
+    private int sepRows, sepCols;
 
     public Canvas(JPanel panel) {
         this.panel = panel;
+        this.setBounds(0,0,505,505);
+        this.addMouseListener(this);
 
-        this.setBounds(0,0,500,500);
+        this.cells=new ArrayList<>();
+        this.generateCells();
 
         this.mirrors=new ArrayList<>();
-        this.mirrors.add(new Mirror(Mirror.LESS_90,275,275,50));
-        this.mirrors.add(new Mirror(Mirror.MORE_90,325,150,50));
-        this.mirrors.add(new Mirror(Mirror.LESS_90,175,150,50));
-        this.mirrors.add(new Mirror(Mirror.LESS_90,175,350,50));
-        this.mirrors.add(new Mirror(Mirror.MORE_90,105,350,50));
-        this.mirrors.add(new Mirror(Mirror.LESS_90,55,100,50));
-        this.mirrors.add(new Mirror(Mirror.MORE_90,450,100,50));
-        this.mirrors.add(new Mirror(Mirror.MORE_90,450,400,50));
-
         this.laserArrayList = new ArrayList<>();
-        laserArrayList.add(new Laser(1,0,0,250));
+        laserArrayList.add(new Laser(1,0,0,437));
+    }
+
+    private void generateCells(){
+        this.sepCols =500/ cols;
+        this.sepRows = 500/ rows;
+
+        //FIXME Cell don't paint well
+        int x=0,y=0;
+        for(int i = 0; i< rows; i++){
+            for(int j = 0; j< cols; j++){
+                cells.add(new Cell(x,y,sepCols,sepRows));
+                x+=sepCols;
+            }
+            y+=sepRows;
+            x=0;
+        }
     }
 
     public void paint(Graphics g){
+
+        //Cells paints
+        g.setColor(PaletaColores.SIENNA_4);
+        for (Cell cell : cells) cell.show(g);
+
+        //Mirrors paint
         g.setColor(PaletaColores.IRISH_BLUE);
+        for(Mirror mirror : mirrors) mirror.show(g);
 
-        for (int i=0;i<mirrors.size();i++){
-            g.drawLine(mirrors.get(i).getInitialX(),mirrors.get(i).getInitialY(),
-                    mirrors.get(i).getFinalX(),mirrors.get(i).getFinalY());
-            g.drawLine(mirrors.get(i).getInitialX()+1,mirrors.get(i).getInitialY(),
-                    mirrors.get(i).getFinalX()+1,mirrors.get(i).getFinalY());
-        }
-
+        //Lasers paints
         g.setColor(PaletaColores.ALIZARIN);
-
-        for (int i=0;i<laserArrayList.size();i++){
-
-            g.drawLine(laserArrayList.get(i).getInitialX(),laserArrayList.get(i).getInitialY(),
-                    laserArrayList.get(i).getFinalX(),laserArrayList.get(i).getFinalY());
-
-        }
+        for(Laser laser : laserArrayList) laser.show(g);
 
     }
 
     Thread thread = new Thread(()->{
         try{
-            System.out.println("Started thread");
             int posH=-1;
             int posI=-1;
             while(true){
 
                 for (int i=0;i<laserArrayList.size();i++){
                     if(!laserArrayList.get(i).isStop()){
-                        laserArrayList.get(i).increaseX();
-                        laserArrayList.get(i).increaseY();
+                        laserArrayList.get(i).increaseXY();
 
                         for(int h=0;h<mirrors.size();h++){
                             if(mirrors.get(h).isTouching(laserArrayList.get(i).getFinalX(),laserArrayList.get(i).getFinalY())){
@@ -80,7 +89,7 @@ public class Canvas extends JComponent {
                 }
 
                 if( posH!=-1 && posI!=-1){
-                    laserArrayList.add(mirrors.get(posH).getLaser(laserArrayList.get(posI)));
+                    laserArrayList.add(mirrors.get(posH).reflect(laserArrayList.get(posI)));
                     posH=-1;
                     posI=-1;
                 }
@@ -93,7 +102,36 @@ public class Canvas extends JComponent {
         }
     });
 
-    public void shot(){
+    public void shoot(){
         this.thread.start();
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+        for(Cell cell : cells){
+            if(cell.isHere(e.getX(),e.getY())){
+                break;
+            }
+        }
+        this.panel.repaint();
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+
     }
 }

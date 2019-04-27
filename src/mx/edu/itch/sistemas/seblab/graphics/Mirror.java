@@ -1,5 +1,7 @@
 package mx.edu.itch.sistemas.seblab.graphics;
 
+import java.awt.*;
+
 public class Mirror {
 
     public static final int LESS_90 = 0;
@@ -25,20 +27,9 @@ public class Mirror {
         }
     }
 
-    public int getInitialX() {
-        return initialX;
-    }
-
-    public int getInitialY() {
-        return initialY;
-    }
-
-    public int getFinalX() {
-        return finalX;
-    }
-
-    public int getFinalY() {
-        return finalY;
+    public void show(Graphics g){
+        g.drawLine(initialX,initialY,finalX,finalY);
+        g.drawLine(initialX+1,initialY,finalX+1,finalY);
     }
 
     public boolean isTouching(int finalX, int finalY) {
@@ -71,7 +62,7 @@ public class Mirror {
         }
     }
 
-    public Laser getLaser(Laser oldLaser){
+    public Laser reflect(Laser oldLaser){
         Laser newLaser=null;
         int newDirectionX=0,newDirectionY=0;
 

@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbfd6ba4-21a8-4934-9cc1-59605df66591" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3_sources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_api_5_5_0_M1_sources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/mx/edu/itch/sistemas/seblab/compiler/CompilerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MirrorsGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MirrorsGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MirrorsGame/mx/edu/itch/sistemas/seblab/graphics/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MirrorsGame/mx/edu/itch/sistemas/seblab/graphics/Canvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MirrorsGame/mx/edu/itch/sistemas/seblab/ui/Principal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MirrorsGame/mx/edu/itch/sistemas/seblab/ui/Principal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Laser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Laser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Mirror.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Mirror.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/ui/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/ui/Principal.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,34 +23,41 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/ui/Principal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            <state relative-caret-position="102">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
+                <element signature="method#Principal#0;class#Principal#0" />
+                <element signature="e#729#783#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+            <state relative-caret-position="111">
+              <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1078#1079#0" expanded="true" />
+                <element signature="method#Canvas#0;class#Canvas#0" />
+                <element signature="e#1102#1296#1" />
+                <element signature="e#1144#1245#1" />
+                <element signature="e#3048#3375#1" />
+                <element signature="e#3176#3349#1" />
+                <element signature="e#3593#3678#1" />
+                <element signature="e#3761#3932#1" />
+                <element signature="e#4060#4104#0" />
+                <element signature="n#!!block;n#shoot#0;n#Canvas#0" />
+                <element signature="method#mouseReleased#0;class#Canvas#0" />
+                <element signature="method#mouseEntered#0;class#Canvas#0" />
+                <element signature="method#mouseExited#0;class#Canvas#0" />
               </folding>
             </state>
           </provider>
@@ -48,17 +66,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Mirror.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
+            <state relative-caret-position="255">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#930#931#0" expanded="true" />
+                <element signature="method#Mirror#0;class#Mirror#0" />
+                <element signature="e#467#566#1" />
+                <element signature="e#570#669#1" />
+                <element signature="method#show#0;class#Mirror#0" />
+                <element signature="method#isTouching#0;class#Mirror#0" />
+                <element signature="e#1022#1347#1" />
+                <element signature="e#1084#1288#1" />
+                <element signature="e#1165#1217#1" />
+                <element signature="e#1221#1274#1" />
+                <element signature="e#1292#1337#1" />
+                <element signature="e#1351#1674#1" />
+                <element signature="e#1413#1614#1" />
+                <element signature="e#1491#1543#1" />
+                <element signature="e#1547#1600#1" />
+                <element signature="e#1618#1663#1" />
+                <element signature="method#reflect#0;class#Mirror#0" />
+                <element signature="e#1825#2242#1" />
+                <element signature="e#1870#2049#1" />
+                <element signature="e#1918#1975#1" />
+                <element signature="e#1979#2035#1" />
+                <element signature="e#2053#2232#1" />
+                <element signature="e#2101#2158#1" />
+                <element signature="e#2162#2218#1" />
+                <element signature="e#2246#2663#1" />
+                <element signature="e#2291#2470#1" />
+                <element signature="e#2339#2396#1" />
+                <element signature="e#2400#2456#1" />
+                <element signature="e#2474#2653#1" />
+                <element signature="e#2522#2579#1" />
+                <element signature="e#2583#2639#1" />
+                <element signature="e#2791#2846#1" />
               </folding>
             </state>
           </provider>
@@ -67,28 +108,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Laser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+            <state relative-caret-position="74">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding>
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#874#875#0" expanded="true" />
-                <element signature="e#903#904#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#878#879#0" expanded="true" />
-                <element signature="e#897#898#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1134#1135#0" expanded="true" />
-                <element signature="e#1174#1175#0" expanded="true" />
-                <element signature="e#1206#1207#0" expanded="true" />
-                <element signature="e#1210#1211#0" expanded="true" />
-                <element signature="e#1238#1239#0" expanded="true" />
-                <element signature="e#1265#1266#0" expanded="true" />
+                <element signature="method#Laser#0;class#Laser#0" />
+                <element signature="method#increaseX#0;class#Laser#0" />
+                <element signature="n#!!block;n#stop#1;n#Laser#0" />
+                <element signature="n#!!block;n#show#0;n#Laser#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+              <folding>
+                <element signature="e#1087#1088#0" expanded="true" />
+                <element signature="e#1117#1118#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,6 +138,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -109,10 +149,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/files/levels.txt" />
+        <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/compiler/Compiler.java" />
+        <option value="$PROJECT_DIR$/src/test/mx/edu/itch/sistemas/seblab/compiler/CompilerTest.java" />
         <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/ui/Principal.java" />
         <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Laser.java" />
         <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Mirror.java" />
         <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java" />
+        <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java" />
       </list>
     </option>
   </component>
@@ -121,13 +165,14 @@
     <option name="width" value="543" />
     <option name="height" value="775" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,21 +191,50 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="seblab" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MirrorsGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MirrorsGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="seblab" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MirrorsGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MirrorsGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="seblab" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hello-world/Tec/6to semestre/LibreriasPropias/TecKit/dist/TecKit.jar!/" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/apiguardian-api-1.0.0.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="mx.edu.itch.sistemas.seblab.compiler" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -174,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Principal">
     <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mx.edu.itch.sistemas.seblab.ui.Principal" />
       <module name="MirrorsGame" />
@@ -182,9 +256,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CompilerTest.compilerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MirrorsGame" />
+      <option name="PACKAGE_NAME" value="mx.edu.itch.sistemas.seblab.compiler" />
+      <option name="MAIN_CLASS_NAME" value="mx.edu.itch.sistemas.seblab.compiler.CompilerTest" />
+      <option name="METHOD_NAME" value="compilerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompilerTest.readLevelFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MirrorsGame" />
+      <option name="PACKAGE_NAME" value="mx.edu.itch.sistemas.seblab.compiler" />
+      <option name="MAIN_CLASS_NAME" value="mx.edu.itch.sistemas.seblab.compiler.CompilerTest" />
+      <option name="METHOD_NAME" value="readLevelFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Principal" />
+        <item itemvalue="JUnit.CompilerTest.compilerTest" />
+        <item itemvalue="JUnit.CompilerTest.readLevelFile" />
       </list>
     </recent_temporary>
   </component>
@@ -201,104 +297,215 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="CompilerTest_readLevelFile - 2019.04.21 at 20h 19m 42s.xml">
+      <configuration name="CompilerTest.readLevelFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompilerTest_readLevelFile - 2019.04.21 at 20h 20m 27s.xml">
+      <configuration name="CompilerTest.readLevelFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompilerTest_compilerTest - 2019.04.21 at 20h 29m 25s.xml">
+      <configuration name="CompilerTest.compilerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompilerTest_compilerTest - 2019.04.21 at 20h 29m 41s.xml">
+      <configuration name="CompilerTest.compilerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompilerTest_compilerTest - 2019.04.21 at 20h 30m 31s.xml">
+      <configuration name="CompilerTest.compilerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompilerTest_compilerTest - 2019.04.21 at 20h 31m 38s.xml">
+      <configuration name="CompilerTest.compilerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompilerTest_compilerTest - 2019.04.21 at 20h 31m 58s.xml">
+      <configuration name="CompilerTest.compilerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompilerTest_compilerTest - 2019.04.21 at 20h 32m 10s.xml">
+      <configuration name="CompilerTest.compilerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompilerTest_compilerTest - 2019.04.21 at 20h 32m 25s.xml">
+      <configuration name="CompilerTest.compilerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompilerTest_compilerTest - 2019.04.21 at 20h 32m 55s.xml">
+      <configuration name="CompilerTest.compilerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19364598" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32872504" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.20877458" />
+      <window_info id="Structure" order="1" sideWeight="0.5011442" side_tool="true" weight="0.19969743" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32872504" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32872504" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872504" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32872504" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java</url>
+          <line>49</line>
+          <properties class="mx.edu.itch.sistemas.seblab.graphics.Canvas" method="paint">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/files/levels.txt" />
+    <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/compiler/Compiler.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/mx/edu/itch/sistemas/seblab/compiler/CompilerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/awt/event/ActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/javax/swing/JComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="888" column="41" selection-start-line="888" selection-start-column="41" selection-end-line="888" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/ui/Principal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        <state relative-caret-position="102">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
+            <element signature="method#Principal#0;class#Principal#0" />
+            <element signature="e#729#783#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Laser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+        <state relative-caret-position="74">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1134#1135#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#1238#1239#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Mirror.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
-          <folding>
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
+            <element signature="method#Laser#0;class#Laser#0" />
+            <element signature="method#increaseX#0;class#Laser#0" />
+            <element signature="n#!!block;n#stop#1;n#Laser#0" />
+            <element signature="n#!!block;n#show#0;n#Laser#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        <state relative-caret-position="111">
+          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="method#Canvas#0;class#Canvas#0" />
+            <element signature="e#1102#1296#1" />
+            <element signature="e#1144#1245#1" />
+            <element signature="e#3048#3375#1" />
+            <element signature="e#3176#3349#1" />
+            <element signature="e#3593#3678#1" />
+            <element signature="e#3761#3932#1" />
+            <element signature="e#4060#4104#0" />
+            <element signature="n#!!block;n#shoot#0;n#Canvas#0" />
+            <element signature="method#mouseReleased#0;class#Canvas#0" />
+            <element signature="method#mouseEntered#0;class#Canvas#0" />
+            <element signature="method#mouseExited#0;class#Canvas#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Mirror.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="method#Mirror#0;class#Mirror#0" />
+            <element signature="e#467#566#1" />
+            <element signature="e#570#669#1" />
+            <element signature="method#show#0;class#Mirror#0" />
+            <element signature="method#isTouching#0;class#Mirror#0" />
+            <element signature="e#1022#1347#1" />
+            <element signature="e#1084#1288#1" />
+            <element signature="e#1165#1217#1" />
+            <element signature="e#1221#1274#1" />
+            <element signature="e#1292#1337#1" />
+            <element signature="e#1351#1674#1" />
+            <element signature="e#1413#1614#1" />
+            <element signature="e#1491#1543#1" />
+            <element signature="e#1547#1600#1" />
+            <element signature="e#1618#1663#1" />
+            <element signature="method#reflect#0;class#Mirror#0" />
+            <element signature="e#1825#2242#1" />
+            <element signature="e#1870#2049#1" />
+            <element signature="e#1918#1975#1" />
+            <element signature="e#1979#2035#1" />
+            <element signature="e#2053#2232#1" />
+            <element signature="e#2101#2158#1" />
+            <element signature="e#2162#2218#1" />
+            <element signature="e#2246#2663#1" />
+            <element signature="e#2291#2470#1" />
+            <element signature="e#2339#2396#1" />
+            <element signature="e#2400#2456#1" />
+            <element signature="e#2474#2653#1" />
+            <element signature="e#2522#2579#1" />
+            <element signature="e#2583#2639#1" />
+            <element signature="e#2791#2846#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+          <folding>
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -353,10 +560,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>MirrorsGame</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -376,7 +585,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>TecKit</last-edited>
+          <last-edited>junit-jupiter-api-5.5.0-M1-sources</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
