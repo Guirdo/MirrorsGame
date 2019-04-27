@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbfd6ba4-21a8-4934-9cc1-59605df66591" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3_sources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_api_5_5_0_M1_sources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/mx/edu/itch/sistemas/seblab/compiler/CompilerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MirrorsGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MirrorsGame.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MirrorsGame/mx/edu/itch/sistemas/seblab/graphics/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MirrorsGame/mx/edu/itch/sistemas/seblab/graphics/Canvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MirrorsGame/mx/edu/itch/sistemas/seblab/ui/Principal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MirrorsGame/mx/edu/itch/sistemas/seblab/ui/Principal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MirrorsGame/mx/edu/itch/sistemas/seblab/graphics/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MirrorsGame/mx/edu/itch/sistemas/seblab/graphics/Cell.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Laser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Laser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Mirror.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Mirror.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/ui/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/ui/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,21 +33,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+            <state relative-caret-position="204">
+              <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
               <folding>
-                <element signature="method#Canvas#0;class#Canvas#0" />
-                <element signature="e#1102#1296#1" />
-                <element signature="e#1144#1245#1" />
                 <element signature="e#3048#3375#1" />
                 <element signature="e#3176#3349#1" />
                 <element signature="e#3593#3678#1" />
                 <element signature="e#3761#3932#1" />
                 <element signature="e#4060#4104#0" />
+                <element signature="e#3363#3364#0" expanded="true" />
                 <element signature="n#!!block;n#shoot#0;n#Canvas#0" />
+                <element signature="e#3398#3399#0" expanded="true" />
                 <element signature="method#mouseReleased#0;class#Canvas#0" />
                 <element signature="method#mouseEntered#0;class#Canvas#0" />
                 <element signature="method#mouseExited#0;class#Canvas#0" />
@@ -120,15 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
-              <folding>
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="510">
+              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -155,8 +143,8 @@
         <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/ui/Principal.java" />
         <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Laser.java" />
         <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Mirror.java" />
-        <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java" />
         <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java" />
+        <option value="$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java" />
       </list>
     </option>
   </component>
@@ -373,19 +361,11 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java</url>
-          <line>49</line>
-          <properties class="mx.edu.itch.sistemas.seblab.graphics.Canvas" method="paint">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java</url>
-          <line>23</line>
+          <url>file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java</url>
+          <line>24</line>
           <properties />
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -438,27 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
-          <folding>
-            <element signature="method#Canvas#0;class#Canvas#0" />
-            <element signature="e#1102#1296#1" />
-            <element signature="e#1144#1245#1" />
-            <element signature="e#3048#3375#1" />
-            <element signature="e#3176#3349#1" />
-            <element signature="e#3593#3678#1" />
-            <element signature="e#3761#3932#1" />
-            <element signature="e#4060#4104#0" />
-            <element signature="n#!!block;n#shoot#0;n#Canvas#0" />
-            <element signature="method#mouseReleased#0;class#Canvas#0" />
-            <element signature="method#mouseEntered#0;class#Canvas#0" />
-            <element signature="method#mouseExited#0;class#Canvas#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Mirror.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -501,11 +460,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+        <state relative-caret-position="510">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mx/edu/itch/sistemas/seblab/graphics/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
           <folding>
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#3048#3375#1" />
+            <element signature="e#3176#3349#1" />
+            <element signature="e#3593#3678#1" />
+            <element signature="e#3761#3932#1" />
+            <element signature="e#4060#4104#0" />
+            <element signature="e#3363#3364#0" expanded="true" />
+            <element signature="n#!!block;n#shoot#0;n#Canvas#0" />
+            <element signature="e#3398#3399#0" expanded="true" />
+            <element signature="method#mouseReleased#0;class#Canvas#0" />
+            <element signature="method#mouseEntered#0;class#Canvas#0" />
+            <element signature="method#mouseExited#0;class#Canvas#0" />
           </folding>
         </state>
       </provider>

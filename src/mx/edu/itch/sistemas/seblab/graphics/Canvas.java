@@ -14,9 +14,12 @@ public class Canvas extends JComponent implements MouseListener {
     private ArrayList<Laser> laserArrayList;
     private ArrayList<Mirror> mirrors;
     private ArrayList<Cell> cells;
-    private int rows =4;
-    private int cols = 4;
+    private int rows =3;
+    private int cols = 3;
     private int sepRows, sepCols;
+
+    //Variables para pruebas
+    private Color[] paleta = {PaletaColores.ALIZARIN, PaletaColores.LIGHT_GREEN, PaletaColores.TURQUOISE,PaletaColores.LINX_WHITE};
 
     public Canvas(JPanel panel) {
         this.panel = panel;
@@ -34,8 +37,7 @@ public class Canvas extends JComponent implements MouseListener {
     private void generateCells(){
         this.sepCols =500/ cols;
         this.sepRows = 500/ rows;
-
-        //FIXME Cell don't paint well
+        
         int x=0,y=0;
         for(int i = 0; i< rows; i++){
             for(int j = 0; j< cols; j++){
@@ -52,7 +54,6 @@ public class Canvas extends JComponent implements MouseListener {
         //Cells paints
         g.setColor(PaletaColores.SIENNA_4);
         for (Cell cell : cells) cell.show(g);
-
         //Mirrors paint
         g.setColor(PaletaColores.IRISH_BLUE);
         for(Mirror mirror : mirrors) mirror.show(g);
