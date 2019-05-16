@@ -10,12 +10,12 @@ Estas son algunas de la tareas que ya se acompletaron y las que faltan:
 
     Los lasers y los espejos funcionan. Para este punto los espejos se tienen que colocar manualmente en el código para probarlos. 
     
-- [ ] Celdas.
+- [x] Celdas.  
 
-Las celdas tendran las capacidad de insertar espejos al Canvas, ademas de tener caracteristicas especificas como: 
-    * Permitir y obstruir el paso del laser. 
-    * Ser la celda meta del nivel.
-    * Colocar espejos dentro de ellos.
+Las celdas tendran las capacidad de insertar espejos al Canvas, ademas de tener caracteristicas especificas como:  
+ * Permitir y obstruir el paso del laser.  
+ * Ser la celda meta del nivel.  
+ * Colocar espejos dentro de ellos.  
     
 - [ ] Diseño de niveles
 
