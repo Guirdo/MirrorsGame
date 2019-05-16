@@ -12,32 +12,32 @@ public class Canvas extends JComponent implements MouseListener {
 
     private JPanel panel;
     private ArrayList<Laser> laserArrayList;
-    private ArrayList<Mirror> mirrors;
     private ArrayList<Cell> cells;
-    private int rows =3;
-    private int cols = 3;
+    private int rows =5;
+    private int cols = 5;
     private int sepRows, sepCols;
-
-    //Variables para pruebas
-    private Color[] paleta = {PaletaColores.ALIZARIN, PaletaColores.LIGHT_GREEN, PaletaColores.TURQUOISE,PaletaColores.LINX_WHITE};
+    private volatile boolean isShooting;
 
     public Canvas(JPanel panel) {
         this.panel = panel;
         this.setBounds(0,0,505,505);
         this.addMouseListener(this);
 
+        isShooting=false;
+
         this.cells=new ArrayList<>();
         this.generateCells();
 
-        this.mirrors=new ArrayList<>();
+        double posLaser = sepCols * (cols-0.5);
+
         this.laserArrayList = new ArrayList<>();
-        laserArrayList.add(new Laser(1,0,0,437));
+        laserArrayList.add(new Laser(1,0,0,(int)posLaser));
     }
 
     private void generateCells(){
         this.sepCols =500/ cols;
         this.sepRows = 500/ rows;
-        
+
         int x=0,y=0;
         for(int i = 0; i< rows; i++){
             for(int j = 0; j< cols; j++){
@@ -52,11 +52,7 @@ public class Canvas extends JComponent implements MouseListener {
     public void paint(Graphics g){
 
         //Cells paints
-        g.setColor(PaletaColores.SIENNA_4);
         for (Cell cell : cells) cell.show(g);
-        //Mirrors paint
-        g.setColor(PaletaColores.IRISH_BLUE);
-        for(Mirror mirror : mirrors) mirror.show(g);
 
         //Lasers paints
         g.setColor(PaletaColores.ALIZARIN);
@@ -70,33 +66,50 @@ public class Canvas extends JComponent implements MouseListener {
             int posI=-1;
             while(true){
 
-                for (int i=0;i<laserArrayList.size();i++){
-                    if(!laserArrayList.get(i).isStop()){
-                        laserArrayList.get(i).increaseXY();
+                if(this.isShooting){
+                    for (int i=0;i<laserArrayList.size();i++){
+                        if(!laserArrayList.get(i).isStop()){
+                            laserArrayList.get(i).increaseXY();
 
-                        for(int h=0;h<mirrors.size();h++){
-                            if(mirrors.get(h).isTouching(laserArrayList.get(i).getFinalX(),laserArrayList.get(i).getFinalY())){
+                            int h=0;
+                            for(Cell cell : cells){
+                                if(cell.isTranslucent()){
+                                    if(cell.getClick()>0 && cell.getClick()<3){
+                                        if(cell.getMirror().isTouched(laserArrayList.get(i))){
+                                            laserArrayList.get(i).stop();
+                                            posH=h;
+                                            posI=i;
+                                        }
+                                    }else if(cell.getClick()==5){
+                                        if(cell.isTouched(laserArrayList.get(i))){
+                                            laserArrayList.get(i).stop();
+                                            JOptionPane.showMessageDialog(null,"Ya ganaste");
+                                        }
+                                    }
+                                }else{
+                                    if(cell.isTouched(laserArrayList.get(i))){
+                                        laserArrayList.get(i).stop();
+                                    }
+                                }
+                                h++;
+                            }
+
+                            if(laserArrayList.get(i).getFinalX()==500 || laserArrayList.get(i).getFinalX()==0
+                                    || laserArrayList.get(i).getFinalY()==0 || laserArrayList.get(i).getFinalY()==500){
                                 laserArrayList.get(i).stop();
-                                posH=h;
-                                posI=i;
                             }
                         }
-
-                        if(laserArrayList.get(i).getFinalX()==500 || laserArrayList.get(i).getFinalX()==0
-                            || laserArrayList.get(i).getFinalY()==0 || laserArrayList.get(i).getFinalY()==500){
-                            laserArrayList.get(i).stop();
-                        }
                     }
-                }
 
-                if( posH!=-1 && posI!=-1){
-                    laserArrayList.add(mirrors.get(posH).reflect(laserArrayList.get(posI)));
-                    posH=-1;
-                    posI=-1;
-                }
+                    if( posH!=-1 && posI!=-1){
+                        laserArrayList.add(cells.get(posH).getMirror().reflect(laserArrayList.get(posI)));
+                        posH=-1;
+                        posI=-1;
+                    }
 
-                this.panel.repaint();
-                Thread.sleep(1);
+                    this.panel.repaint();
+                    Thread.sleep(1);
+                }
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -104,7 +117,24 @@ public class Canvas extends JComponent implements MouseListener {
     });
 
     public void shoot(){
-        this.thread.start();
+        this.isShooting=true;
+        if(!thread.isAlive()){
+            System.out.println("Esta iniciando el hilo");
+            this.thread.start();
+        }
+    }
+
+    public void newGame(){
+        isShooting=false;
+        this.cells=new ArrayList<>();
+        this.generateCells();
+
+        double posLaser = sepCols * (cols-0.5);
+
+        this.laserArrayList = new ArrayList<>();
+        laserArrayList.add(new Laser(1,0,0,(int)posLaser));
+
+        panel.repaint();
     }
 
     @Override
@@ -113,11 +143,21 @@ public class Canvas extends JComponent implements MouseListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
-        for(Cell cell : cells){
-            if(cell.isHere(e.getX(),e.getY())){
-                break;
+
+        if(e.isMetaDown()){
+            for(Cell cell : cells){
+                if(cell.setGoal(e.getX(),e.getY())){
+                    break;
+                }
+            }
+        }else{
+            for(Cell cell : cells){
+                if(cell.isHere(e.getX(),e.getY())){
+                    break;
+                }
             }
         }
+
         this.panel.repaint();
     }
 

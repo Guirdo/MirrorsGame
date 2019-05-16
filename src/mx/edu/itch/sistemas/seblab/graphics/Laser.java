@@ -25,14 +25,6 @@ public class Laser {
         this.finalY= this.initialY+this.directionY;
     }
 
-    public int getInitialX() {
-        return initialX;
-    }
-
-    public int getInitialY() {
-        return initialY;
-    }
-
     public int getFinalX() {
         return finalX;
     }

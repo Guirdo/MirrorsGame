@@ -1,5 +1,7 @@
 package mx.edu.itch.sistemas.seblab.graphics;
 
+import mx.edu.itch.sistemas.seblab.InterfazGrafica.PaletaColores;
+
 import java.awt.*;
 
 public class Mirror {
@@ -28,38 +30,9 @@ public class Mirror {
     }
 
     public void show(Graphics g){
+        g.setColor(PaletaColores.IRISH_BLUE);
         g.drawLine(initialX,initialY,finalX,finalY);
         g.drawLine(initialX+1,initialY,finalX+1,finalY);
-    }
-
-    public boolean isTouching(int finalX, int finalY) {
-        int y;
-        if(this.face==LESS_90){
-            if(finalX>=this.initialX && finalX<=this.finalX){
-                y = initialY -(finalX-initialX);
-
-                if(y==finalY){
-                    return true;
-                }else{
-                    return false;
-                }
-            }else{
-                return false;
-            }
-        }else{
-            if(finalX<=this.initialX && finalX>=this.finalX){
-                y=initialY-(initialX-finalX);
-
-                if(y==finalY){
-                    return true;
-                }else{
-                    return false;
-                }
-            }else{
-                return false;
-            }
-
-        }
     }
 
     public Laser reflect(Laser oldLaser){
@@ -103,5 +76,35 @@ public class Mirror {
         }
 
         return newLaser;
+    }
+
+    public boolean isTouched(Laser laser) {
+        int y;
+        if(this.face==LESS_90){
+            if(laser.getFinalX()>=this.initialX && laser.getFinalX()<=this.finalX){
+                y = initialY -(laser.getFinalX()-initialX);
+
+                if(y==laser.getFinalY()){
+                    return true;
+                }else{
+                    return false;
+                }
+            }else{
+                return false;
+            }
+        }else{
+            if(laser.getFinalX()<=this.initialX && laser.getFinalX()>=this.finalX){
+                y=initialY-(initialX-laser.getFinalX());
+
+                if(y==laser.getFinalY()){
+                    return true;
+                }else{
+                    return false;
+                }
+            }else{
+                return false;
+            }
+
+        }
     }
 }
